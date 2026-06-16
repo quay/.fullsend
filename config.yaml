@@ -89,7 +89,7 @@ repos:
     opensearch-dashboards:
         enabled: false
     quay:
-        enabled: false
+        enabled: true
     quay-bridge-operator:
         enabled: false
     quay-builder:
