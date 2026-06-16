@@ -50,6 +50,8 @@ repos:
         enabled: true
     quay-fbcs:
         enabled: true
+    quay-konflux-components:
+        enabled: true
     quay:
         enabled: true
 allowed_remote_resources:
