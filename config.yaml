@@ -44,7 +44,7 @@ repos:
         enabled: true
     quay-operator:
         enabled: true
-    quay-konflux:
+    enhancements:
         enabled: true
     quay-konflux-configs:
         enabled: true
