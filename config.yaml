@@ -39,102 +39,18 @@ agents:
       slug: fullsend-ai-prioritize
 repos:
     .fullsend:
-        enabled: false
-    .github:
-        enabled: false
+        enabled: true
     ai-helpers:
-        enabled: false
-    bastion:
-        enabled: false
-    clair:
-        enabled: false
-    clair-action:
-        enabled: false
-    clair-enrichment-spec:
-        enabled: false
-    clair-fixtures:
-        enabled: false
-    clair-jwt:
-        enabled: false
-    clair-load-test:
-        enabled: false
-    clair-notification-spec:
-        enabled: false
-    clair-operator:
-        enabled: false
-    clair-workflows:
-        enabled: false
-    clair-workspace:
-        enabled: false
-    claircore:
-        enabled: false
-    claircore-acceptance:
-        enabled: false
-    community:
-        enabled: false
-    container-security-operator:
-        enabled: false
-    dba-operator:
-        enabled: false
-    dora:
-        enabled: false
-    enhancements:
-        enabled: false
-    jwtproxy:
-        enabled: false
-    limits:
-        enabled: false
-    mirror-registry:
-        enabled: false
-    opensearch-dashboards:
-        enabled: false
+        enabled: true
+    quay-operator:
+        enabled: true
+    quay-konflux:
+        enabled: true
+    quay-konflux-configs:
+        enabled: true
+    quay-fbcs:
+        enabled: true
     quay:
         enabled: true
-    quay-bridge-operator:
-        enabled: false
-    quay-builder:
-        enabled: false
-    quay-builder-qemu:
-        enabled: false
-    quay-ci-app:
-        enabled: false
-    quay-cloudflare-cdn-worker:
-        enabled: false
-    quay-docs:
-        enabled: false
-    quay-mcp-server:
-        enabled: false
-    quay-operator:
-        enabled: false
-    quay-osbs:
-        enabled: false
-    quay-packages:
-        enabled: false
-    quay-performance-scripts:
-        enabled: false
-    quay-ref-promoter:
-        enabled: false
-    quay-service-tool:
-        enabled: false
-    quayctl:
-        enabled: false
-    registry-proxy-tests:
-        enabled: false
-    release-readiness:
-        enabled: false
-    releases:
-        enabled: false
-    rhcc-survey:
-        enabled: false
-    test-cluster:
-        enabled: false
-    update-banner-job:
-        enabled: false
-    update-py2-db:
-        enabled: false
-    update-ro-keys-job:
-        enabled: false
-    zlog:
-        enabled: false
 allowed_remote_resources:
     - https://raw.githubusercontent.com/fullsend-ai/fullsend/
