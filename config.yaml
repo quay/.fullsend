@@ -44,6 +44,12 @@ repos:
         enabled: true
     quay-operator:
         enabled: true
+        roles:
+            - fullsend
+            - triage
+            - coder
+            - retro
+            - prioritize
     enhancements:
         enabled: true
     quay-konflux-configs:
@@ -54,5 +60,11 @@ repos:
         enabled: true
     quay:
         enabled: true
+        roles:
+            - fullsend
+            - triage
+            - coder
+            - retro
+            - prioritize
 allowed_remote_resources:
     - https://raw.githubusercontent.com/fullsend-ai/fullsend/
