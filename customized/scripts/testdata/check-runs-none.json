@@ -1,0 +1,15 @@
+{
+  "total_count": 1,
+  "check_runs": [
+    {
+      "name": "dispatch / Review / Review",
+      "status": "completed",
+      "conclusion": "success",
+      "app": { "slug": "github-actions" },
+      "output": {
+        "summary": null,
+        "text": null
+      }
+    }
+  ]
+}

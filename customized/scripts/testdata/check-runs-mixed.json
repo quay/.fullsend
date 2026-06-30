@@ -1,0 +1,37 @@
+{
+  "total_count": 3,
+  "check_runs": [
+    {
+      "name": "dispatch / Review / Review",
+      "status": "completed",
+      "conclusion": "success",
+      "app": { "slug": "github-actions" },
+      "output": {
+        "summary": null,
+        "text": null
+      }
+    },
+    {
+      "name": "Red Hat Konflux / quay-v3-17-enterprise-contract / quay-operator-v3-17",
+      "status": "completed",
+      "conclusion": "neutral",
+      "details_url": "https://red.ht/trusted",
+      "app": { "slug": "red-hat-konflux" },
+      "output": {
+        "summary": "Integration test for component quay-operator-v3-17 snapshot quay-v3-17-20260626-122624-000 and optional scenario quay-v3-17-enterprise-contract has warning(s)",
+        "text": "<ul><li><b>Pipelinerun</b>: <a href=\"https://konflux-ui.apps.stone-prd-rh01.pg1f.p1.openshiftapps.com/ns/quay-eng-tenant/pipelinerun/quay-v3-17-enterprise-contract-r5jgh\">quay-v3-17-enterprise-contract-r5jgh</a></li></ul><hr>| Task | Duration | Test Suite | Status | Details | Note |\\n| verify | 4m15s | | :warning: WARNING | :heavy_check_mark: 4848 success(es)<br>:warning: 640 warning(s) | |"
+      }
+    },
+    {
+      "name": "Red Hat Konflux / quay-quay-v3-17-on-pull-request",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "details_url": "https://konflux-ui.apps.stone-prd-rh01.pg1f.p1.openshiftapps.com/ns/quay-eng-tenant/pipelinerun/quay-quay-v3-17-on-pull-request-t9kp8",
+      "app": { "slug": "red-hat-konflux" },
+      "output": {
+        "summary": "Red Hat Konflux/quay-quay-v3-17-on-pull-request has been <b>cancelled</b>.",
+        "text": "<ul><li><b>Namespace</b>: <a href=\"https://konflux-ui.apps.stone-prd-rh01.pg1f.p1.openshiftapps.com/ns/quay-eng-tenant\">quay-eng-tenant</a></li><li><b>PipelineRun:</b> <a href=\"https://konflux-ui.apps.stone-prd-rh01.pg1f.p1.openshiftapps.com/ns/quay-eng-tenant/pipelinerun/quay-quay-v3-17-on-pull-request-t9kp8\">quay-quay-v3-17-on-pull-request-t9kp8</a></li></ul><hr><h4>Task Statuses:</h4><table><tr><td>🔴 Failed</td><td>49 minutes</td><td>[build-images](https://konflux-ui.apps.stone-prd-rh01.pg1f.p1.openshiftapps.com/ns/quay-eng-tenant/pipelinerun/quay-quay-v3-17-on-pull-request-t9kp8/logs/build-images)</td></tr></table><hr><h4>Failure snippet:</h4>task <b>build-images</b> has the status <b>\"TaskRunCancelled\"</b>:<pre>TaskRun \"quay-quay-v3-17-on-pull-request-t9kp8-build-images\" was cancelled.</pre>"
+      }
+    }
+  ]
+}
