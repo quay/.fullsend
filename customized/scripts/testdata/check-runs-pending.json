@@ -1,0 +1,16 @@
+{
+  "total_count": 1,
+  "check_runs": [
+    {
+      "name": "Red Hat Konflux / quay-quay-v3-17-on-pull-request",
+      "status": "in_progress",
+      "conclusion": null,
+      "details_url": "https://konflux-ui.apps.stone-prd-rh01.pg1f.p1.openshiftapps.com/ns/quay-eng-tenant/pipelinerun/quay-quay-v3-17-on-pull-request-run12",
+      "app": { "slug": "red-hat-konflux" },
+      "output": {
+        "summary": "Red Hat Konflux/quay-quay-v3-17-on-pull-request is running.",
+        "text": "Starting Pipelinerun <b><a href=\"https://konflux-ui.apps.stone-prd-rh01.pg1f.p1.openshiftapps.com/ns/quay-eng-tenant/pipelinerun/quay-quay-v3-17-on-pull-request-run12\">quay-quay-v3-17-on-pull-request-run12</a></b>"
+      }
+    }
+  ]
+}
