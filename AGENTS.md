@@ -57,3 +57,29 @@ Determine:
 
 Use these criteria as checkpoints. If a checkpoint fails, fix the root
 cause — do not weaken the check.
+
+## 6. PR title format (quay/quay, quay-operator)
+
+These repositories enforce a PR title regex via CI. PRs with non-matching
+titles are blocked from merging.
+
+Pattern:
+
+```
+^(\[redhat-[0-9]+\.[0-9]+\] )?(PROJQUAY-[0-9]+|QUAYIO-[0-9]+|NO-ISSUE): [a-z]+(\([^)]+\))?: .+$
+```
+
+Examples:
+
+```
+PROJQUAY-1234: fix(api): add pagination to tag listing
+NO-ISSUE: chore: update dependencies
+[redhat-3.12] PROJQUAY-1234: fix(api): backport tag pagination
+QUAYIO-567: feat(billing): add usage export endpoint
+```
+
+The `[redhat-X.Y]` prefix is required for backport PRs targeting release
+branches. PROJQUAY and QUAYIO are JIRA project keys; use NO-ISSUE for
+changes without a ticket.
+
+This rule does not apply to other Quay org repositories.
