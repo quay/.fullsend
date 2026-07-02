@@ -1,0 +1,1 @@
+Project rules and instructions live in [AGENTS.md](AGENTS.md). Domain terminology and glossary live in [CONTEXT.md](CONTEXT.md). Read both files — they are the source of truth for all agent-facing guidance in this repo.
