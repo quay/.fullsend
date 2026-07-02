@@ -44,7 +44,9 @@ subject must start with a type prefix (`feat`, `fix`, `refactor`, `docs`,
 ```
 
 Check `CONTRIBUTING.md` or `CLAUDE.md` for repo-specific allowed types. When
-reviewing PRs, flag commits or PR titles that do not follow this format.
+reviewing PRs, flag commits that do not follow this format. For PR titles,
+check for repository-specific conventions (section 6) first; only apply
+Conventional Commits format when no repo-specific rule exists.
 
 ## 5. Goal-driven execution
 
