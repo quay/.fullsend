@@ -51,6 +51,7 @@ jobs:
           PR_BASE_REPO: ${{ github.event.pull_request.base.repo.full_name }}
           PR_USER_LOGIN: ${{ github.event.pull_request.user.login }}
           ORG_NAME: ${{ github.repository_owner }}
+          SOURCE_REPO: ${{ github.repository }}
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
@@ -206,9 +207,17 @@ jobs:
             pull_request_target)
               case "${EVENT_ACTION}" in
                 opened|synchronize|ready_for_review)
-                  if [[ "${PR_USER_LOGIN}" =~ \[bot\]$ ]] || is_event_actor_authorized "${PR_USER_LOGIN}" triage; then
-                    STAGE="review"
-                  fi
+                  # Skip auto-review for opted-out repos.
+                  # Per-repo roles override is not yet supported in per-org mode
+                  # (https://github.com/fullsend-ai/fullsend/issues/2203).
+                  case "${SOURCE_REPO}" in
+                    quay/quay) ;;
+                    *)
+                      if [[ "${PR_USER_LOGIN}" =~ \[bot\]$ ]] || is_event_actor_authorized "${PR_USER_LOGIN}" triage; then
+                        STAGE="review"
+                      fi
+                      ;;
+                  esac
                   ;;
                 labeled)
                   if [[ "${TRIGGERING_LABEL}" == "ready-for-review" ]]; then
