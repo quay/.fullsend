@@ -1,0 +1,9 @@
+---
+base: https://raw.githubusercontent.com/fullsend-ai/agents/89d35ec899c5824b4d98d01e579cffe3a5962928/harness/retro.yaml#sha256=REPLACE_WITH_UPSTREAM_RETRO_HASH
+
+skills:
+  - https://github.com/quay/ai-helpers/tree/7cc0c7b3f00dd3b76f69550823f1f97d48a3f611/plugins/dev/skills/caveman#sha256=REPLACE_WITH_CAVEMAN_TREE_HASH
+
+allowed_remote_resources:
+  - https://github.com/quay/ai-helpers/
+allow_runtime_fetch: true
