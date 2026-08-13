@@ -1,7 +1,8 @@
 # fullsend organization configuration
 # https://github.com/fullsend-ai/fullsend
 #
-# This file is managed by fullsend. Manual edits may be overwritten.
+# Per-org install — register harness overrides via agents[].source (ADR-0058).
+# Harness files live under harness/ (not deprecated customized/ — ADR-0064).
 version: "1"
 dispatch:
     platform: github-actions
@@ -15,26 +16,11 @@ defaults:
         - https://raw.githubusercontent.com/fullsend-ai/fullsend/
         - https://raw.githubusercontent.com/fullsend-ai/agents/
 agents:
-    - role: triage
-      name: triage
-      slug: fullsend-ai-triage
-      source: customized/harness/triage.yaml
-    - role: coder
-      name: code
-      slug: fullsend-ai-coder
-      source: https://raw.githubusercontent.com/fullsend-ai/agents/89d35ec899c5824b4d98d01e579cffe3a5962928/harness/code.yaml#sha256=2752012b4489288c87faebd315089bc2d89b671982de6a084e920e9972ce08be
-    - role: review
-      name: review
-      slug: fullsend-ai-review
-      source: https://raw.githubusercontent.com/fullsend-ai/agents/89d35ec899c5824b4d98d01e579cffe3a5962928/harness/review.yaml#sha256=b8487a58b3aa2f0b608633d505415b57fd7b3e12df2aba3eb240823808f3ef55
-    - role: retro
-      name: retro
-      slug: fullsend-ai-retro
-      source: customized/harness/retro.yaml
-    - role: prioritize
-      name: prioritize
-      slug: fullsend-ai-prioritize
-      source: https://raw.githubusercontent.com/fullsend-ai/agents/89d35ec899c5824b4d98d01e579cffe3a5962928/harness/prioritize.yaml#sha256=93afb2c50bfd828a37d29d24488d9492e541f254bf9153c768eda919e1fc9a33
+    - source: harness/triage.yaml
+    - source: https://raw.githubusercontent.com/fullsend-ai/agents/89d35ec899c5824b4d98d01e579cffe3a5962928/harness/code.yaml#sha256=2752012b4489288c87faebd315089bc2d89b671982de6a084e920e9972ce08be
+    - source: https://raw.githubusercontent.com/fullsend-ai/agents/89d35ec899c5824b4d98d01e579cffe3a5962928/harness/review.yaml#sha256=b8487a58b3aa2f0b608633d505415b57fd7b3e12df2aba3eb240823808f3ef55
+    - source: harness/retro.yaml
+    - source: https://raw.githubusercontent.com/fullsend-ai/agents/89d35ec899c5824b4d98d01e579cffe3a5962928/harness/prioritize.yaml#sha256=93afb2c50bfd828a37d29d24488d9492e541f254bf9153c768eda919e1fc9a33
 repos:
     .fullsend:
         enabled: true
@@ -55,3 +41,4 @@ repos:
 allowed_remote_resources:
     - https://raw.githubusercontent.com/fullsend-ai/fullsend/
     - https://raw.githubusercontent.com/fullsend-ai/agents/
+    - https://github.com/quay/ai-helpers/
