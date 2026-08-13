@@ -1,4 +1,4 @@
----
+# Quay retro overlay — append Caveman communication skill (ADR 0045 base: composition).
 base: https://raw.githubusercontent.com/fullsend-ai/agents/89d35ec899c5824b4d98d01e579cffe3a5962928/harness/retro.yaml#sha256=d1f3beb45bb369a8b5f1def5986a374861032a85174a3b84e34e1054a27f1933
 
 skills:
