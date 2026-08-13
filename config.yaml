@@ -14,6 +14,27 @@ defaults:
     allowed_remote_resources:
         - https://raw.githubusercontent.com/fullsend-ai/fullsend/
         - https://raw.githubusercontent.com/fullsend-ai/agents/
+agents:
+    - role: fullsend
+      name: fullsend-ai-fullsend
+      slug: fullsend-ai-fullsend
+    - role: triage
+      name: fullsend-ai-triage
+      slug: fullsend-ai-triage
+      source: customized/harness/triage.yaml
+    - role: coder
+      name: fullsend-ai-coder
+      slug: fullsend-ai-coder
+    - role: review
+      name: fullsend-ai-review
+      slug: fullsend-ai-review
+    - role: retro
+      name: fullsend-ai-retro
+      slug: fullsend-ai-retro
+      source: customized/harness/retro.yaml
+    - role: prioritize
+      name: fullsend-ai-prioritize
+      slug: fullsend-ai-prioritize
 repos:
     .fullsend:
         enabled: true
