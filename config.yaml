@@ -14,6 +14,7 @@ defaults:
     allowed_remote_resources:
         - https://raw.githubusercontent.com/fullsend-ai/fullsend/
         - https://raw.githubusercontent.com/fullsend-ai/agents/
+        - https://github.com/quay/ai-helpers/
 agents:
     - role: triage
       name: triage
@@ -55,3 +56,4 @@ repos:
 allowed_remote_resources:
     - https://raw.githubusercontent.com/fullsend-ai/fullsend/
     - https://raw.githubusercontent.com/fullsend-ai/agents/
+    - https://github.com/quay/ai-helpers/
