@@ -2,7 +2,7 @@
 base: https://raw.githubusercontent.com/fullsend-ai/agents/89d35ec899c5824b4d98d01e579cffe3a5962928/harness/triage.yaml#sha256=451122f4eb191fa79d42c814a412bb969c7d629a9a10284d6fcd1ce366d46ba5
 
 skills:
-  - https://github.com/quay/ai-helpers/tree/2815fc30a6873a84506d14b5501d578b278483d6/plugins/dev/skills/caveman#sha256=d889d0acb942a525d61cf6ff69649dce483e012f35c2ce20ab25a9368e945e5e
+  - https://github.com/quay/ai-helpers/tree/eddcd18a9a667c2e90bd6eda822ef6b999259cbe/plugins/dev/skills/caveman#sha256=6430b571b0df04d92be7f95515632ee9865d39dfe8fb4dd0ccf647be3b991322
 
 allowed_remote_resources:
   - https://raw.githubusercontent.com/fullsend-ai/agents/
