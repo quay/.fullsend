@@ -18,7 +18,8 @@ defaults:
 agents:
     - source: harness/triage.yaml
     - source: https://raw.githubusercontent.com/fullsend-ai/agents/89d35ec899c5824b4d98d01e579cffe3a5962928/harness/code.yaml#sha256=2752012b4489288c87faebd315089bc2d89b671982de6a084e920e9972ce08be
-    - source: https://raw.githubusercontent.com/fullsend-ai/agents/89d35ec899c5824b4d98d01e579cffe3a5962928/harness/review.yaml#sha256=b8487a58b3aa2f0b608633d505415b57fd7b3e12df2aba3eb240823808f3ef55
+    - name: review
+      enabled: false
     - source: harness/retro.yaml
     - source: https://raw.githubusercontent.com/fullsend-ai/agents/89d35ec899c5824b4d98d01e579cffe3a5962928/harness/prioritize.yaml#sha256=93afb2c50bfd828a37d29d24488d9492e541f254bf9153c768eda919e1fc9a33
 repos:
