@@ -3,6 +3,7 @@ base: https://raw.githubusercontent.com/fullsend-ai/agents/89d35ec899c5824b4d98d
 
 skills:
   - https://github.com/quay/ai-helpers/tree/5094beedfa541bb410558616e97b7068dc52e41a/plugins/dev/skills/caveman#sha256=05854885cd3d4caa0701225a201bf33db9f12c1dcbd0dce7e5d4173acd40e872
+  - https://github.com/quay/ai-helpers/tree/5094beedfa541bb410558616e97b7068dc52e41a/plugins/dev/skills/quay-retro-signal-filter#sha256=9f51bfe5f79806120e9053bd8b23d3884bb8cde1fae7a72a09fe303d96a1ea65
 
 allowed_remote_resources:
   - https://raw.githubusercontent.com/fullsend-ai/agents/
