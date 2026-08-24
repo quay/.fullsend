@@ -37,7 +37,7 @@ jobs:
 
       - name: Mint fullsend token
         id: app-token
-        uses: fullsend-ai/fullsend/.github/actions/mint-token@7b08468970a4e9e924efff34aab5ec62b890b6ca
+        uses: fullsend-ai/fullsend/.github/actions/mint-token@v0
         with:
           role: fullsend
           repos: .fullsend

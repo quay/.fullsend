@@ -29,7 +29,7 @@ concurrency:
 
 jobs:
   prioritize:
-    uses: fullsend-ai/fullsend/.github/workflows/reusable-prioritize.yml@7b08468970a4e9e924efff34aab5ec62b890b6ca
+    uses: fullsend-ai/fullsend/.github/workflows/reusable-prioritize.yml@v0
     with:
       event_type: ${{ inputs.event_type }}
       source_repo: ${{ inputs.source_repo }}
@@ -37,7 +37,7 @@ jobs:
       mint_url: ${{ vars.FULLSEND_MINT_URL }}
       gcp_region: ${{ vars.FULLSEND_GCP_REGION }}
       project_number: ${{ vars.FULLSEND_PROJECT_NUMBER }}
-      fullsend_ai_ref: 7b08468970a4e9e924efff34aab5ec62b890b6ca
+      fullsend_ai_ref: v0
     secrets:
       FULLSEND_GCP_WIF_PROVIDER: ${{ secrets.FULLSEND_GCP_WIF_PROVIDER }}
       FULLSEND_GCP_PROJECT_ID: ${{ secrets.FULLSEND_GCP_PROJECT_ID }}
