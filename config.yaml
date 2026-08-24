@@ -10,6 +10,7 @@ dispatch:
 inference:
     provider: vertex
 defaults:
+    runtime: pi
     max_implementation_retries: 2
     auto_merge: false
     allowed_remote_resources:

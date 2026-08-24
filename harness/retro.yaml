@@ -1,6 +1,6 @@
 # Quay retro overlay — append Caveman communication skill (ADR 0045 base: composition).
 base: https://raw.githubusercontent.com/fullsend-ai/agents/89d35ec899c5824b4d98d01e579cffe3a5962928/harness/retro.yaml#sha256=d1f3beb45bb369a8b5f1def5986a374861032a85174a3b84e34e1054a27f1933
-model: sonnet
+model: google-vertex/gemini-3.7-flash
 
 skills:
   - https://github.com/quay/ai-helpers/tree/eddcd18a9a667c2e90bd6eda822ef6b999259cbe/plugins/dev/skills/caveman#sha256=6430b571b0df04d92be7f95515632ee9865d39dfe8fb4dd0ccf647be3b991322
