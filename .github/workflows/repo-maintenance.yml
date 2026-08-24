@@ -69,7 +69,7 @@ jobs:
       - name: Mint fullsend token
         if: steps.repo-list.outputs.skip != 'true'
         id: app-token
-        uses: fullsend-ai/fullsend/.github/actions/mint-token@v0
+        uses: fullsend-ai/fullsend/.github/actions/mint-token@7b08468970a4e9e924efff34aab5ec62b890b6ca
         with:
           role: fullsend
           repos: ${{ steps.repo-list.outputs.names }}
