@@ -1,5 +1,5 @@
 # Quay triage overlay — append Caveman communication skill (ADR 0045 base: composition).
-base: https://raw.githubusercontent.com/fullsend-ai/agents/89d35ec899c5824b4d98d01e579cffe3a5962928/harness/triage.yaml#sha256=451122f4eb191fa79d42c814a412bb969c7d629a9a10284d6fcd1ce366d46ba5
+base: https://raw.githubusercontent.com/fullsend-ai/agents/dc7c805632ebb6b79a4b0890ef6da17fe8fc539d/harness/triage.yaml#sha256=eaf26420788ca0cfcf1296e8be5f5c5b4fe203c55039f24e46fefef512bca914
 model: gemini-3.7-flash
 
 skills:
