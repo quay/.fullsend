@@ -1,3 +1,3 @@
-# Quay code overlay — use Sonnet for implementation agents.
+# Quay code overlay — use Sonnet 4.6 for implementation agents.
 base: https://raw.githubusercontent.com/fullsend-ai/agents/89d35ec899c5824b4d98d01e579cffe3a5962928/harness/code.yaml#sha256=2752012b4489288c87faebd315089bc2d89b671982de6a084e920e9972ce08be
-model: sonnet
+model: claude-sonnet-4-6
