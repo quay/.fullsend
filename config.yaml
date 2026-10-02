@@ -1,8 +1,7 @@
 # fullsend organization configuration
 # https://github.com/fullsend-ai/fullsend
 #
-# Per-org install — register harness overrides via agents[].source (ADR-0058).
-# Harness files live under harness/ (not deprecated customized/ — ADR-0064).
+# This file is managed by fullsend. Manual edits may be overwritten.
 version: "1"
 dispatch:
     platform: github-actions
@@ -10,11 +9,12 @@ dispatch:
 inference:
     provider: vertex
 defaults:
+    roles: []
     max_implementation_retries: 2
     auto_merge: false
-    allowed_remote_resources:
-        - https://raw.githubusercontent.com/fullsend-ai/fullsend/
-        - https://raw.githubusercontent.com/fullsend-ai/agents/
+repos:
+    .fullsend:
+        enabled: true
 agents:
     - source: harness/triage.yaml
     - source: harness/code.yaml
@@ -22,23 +22,6 @@ agents:
       enabled: false
     - source: harness/retro.yaml
     - source: harness/prioritize.yaml
-repos:
-    .fullsend:
-        enabled: true
-    ai-helpers:
-        enabled: true
-    quay-operator:
-        enabled: true
-    enhancements:
-        enabled: true
-    quay-konflux-configs:
-        enabled: true
-    quay-fbcs:
-        enabled: true
-    quay-konflux-components:
-        enabled: true
-    quay:
-        enabled: true
 allowed_remote_resources:
     - https://raw.githubusercontent.com/fullsend-ai/fullsend/
     - https://raw.githubusercontent.com/fullsend-ai/agents/
